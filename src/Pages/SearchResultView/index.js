@@ -22,7 +22,7 @@ const SearchResultView = () => {
   } = useModal();
 
   const unsplash = new Unsplash({
-    accessKey: "iN9GMgPKIiLYCHBH3kRRovvF2-YAB-CQoCxQwSa6fx0",
+    accessKey: "API_KEY",
   });
   const handleSearch = () => {
     unsplash.search
