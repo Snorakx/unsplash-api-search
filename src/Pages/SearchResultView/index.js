@@ -22,11 +22,13 @@ const SearchResultView = () => {
   } = useModal();
 
   const unsplash = new Unsplash({
-    accessKey: "API_KEY",
+    accessKey: "iN9GMgPKIiLYCHBH3kRRovvF2-YAB-CQoCxQwSa6fx0",
   });
   const handleSearch = () => {
     unsplash.search
-      .photos(localStorage.myValueInLocalStorage, 1, 15)
+      .photos(localStorage.myValueInLocalStorage, 1, 15, {
+        orientation: "portrait",
+      })
       .then(toJson)
       .then((json) => {
         // Your code
