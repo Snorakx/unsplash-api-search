@@ -1,0 +1,17 @@
+.search-container {
+  margin: auto;
+  width: 70%;
+  height: auto;
+}
+.list-group {
+  margin-top: 0.5rem;
+  width: calc(100% - 73.5px);
+  cursor: pointer;
+}
+.list-group-item {
+  transition: 0.1s;
+}
+.list-group-item:hover {
+  background-color: #00000030;
+  color: white;
+}

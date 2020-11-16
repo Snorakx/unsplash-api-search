@@ -1,0 +1,89 @@
+.modal-background {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box {
+  color: #000000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  background-color: #00000050;
+  z-index: 3;
+  border-radius: 5px;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.image-box {
+  max-width: 45vw;
+  margin: 0 auto;
+}
+
+.user-info {
+  color: black;
+  background-color: #f0f0f0;
+  position: relative;
+  height: 8vh;
+}
+.img-fluid {
+  padding: 3%;
+  width: 100%;
+  height: auto;
+}
+.modal-about-photo {
+  font-size: 0.6rem;
+  text-align: left;
+  float: left;
+  padding: 1%;
+  width: 25%;
+}
+.modal-location-info {
+  float: right;
+
+  padding: 1.5% 3% 1% 1%;
+  font-size: 0.6rem;
+}
+.modal-location-icon {
+  padding-right: 5%;
+}
+.modal-about-photo img {
+  border-radius: 50%;
+  max-width: 2.5vw;
+  display: inline;
+  min-width: 30px;
+}
+.modal-close-button {
+  float: right;
+  font-size: 2vw;
+  padding-right: 1.2%;
+  cursor: pointer;
+}
+.modal-top-bar {
+  height: 1px;
+}
+@media (max-width: 688px) {
+  .modal-about-photo img {
+    display: none;
+  }
+  .user-info {
+    max-height: 3vh;
+  }
+}

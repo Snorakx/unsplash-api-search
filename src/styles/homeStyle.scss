@@ -1,0 +1,25 @@
+.background {
+  background-image: url("https://i.ibb.co/cQW4nn1/pexels-pok-rie-5696873.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.my-input-group {
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin-left: auto;
+  width: 100% !important;
+}
+
+.home-header {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.home-header h1 {
+  font-size: 1.733rem;
+}
