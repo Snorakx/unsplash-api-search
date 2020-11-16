@@ -1,21 +1,16 @@
 .single-image {
   // padding-left: 5%;
-
+  width: 100%;
   cursor: zoom-in;
   transition: 0.5s;
-  // &:hover {
-  //   filter: brightness(0.7);
-  // }
+  &:hover {
+    filter: brightness(0.7);
+  }
   margin-bottom: 1rem;
-
-  display: flex;
 }
-.img-fluid {
-  width: 100%;
-
-  flex: 10%;
-  margin-top: 1rem;
-  border-radius: 10px;
+.single-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 .grid-container-images {
@@ -52,6 +47,15 @@ footer {
 
 @media only screen and (max-width: 688px) {
   .grid-container-images {
-    column-count: 2;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 10px auto 10px auto;
+    grid-template-columns: auto auto;
+    justify-items: start;
+    grid-gap: 5px;
+    margin-top: 5%;
+    padding: 10%;
+
+    min-height: 100vh;
   }
 }
