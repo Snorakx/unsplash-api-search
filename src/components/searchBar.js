@@ -42,7 +42,7 @@ class SearchComponent extends Component {
         method: "GET",
         headers: {
           Authorization:
-            "Client-ID iN9GMgPKIiLYCHBH3kRRovvF2-YAB-CQoCxQwSa6fx0",
+            "Client-ID",
         },
       }
     )
